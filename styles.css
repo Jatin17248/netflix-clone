@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
-* {
+*{
   margin: 0;
   padding: 0;
   font-family: "Martel Sans", sans-serif;
@@ -8,11 +8,11 @@
   color:white;
 }
 
-body {
+body{
   background-color: black;
   position: relative;
 }
-.main {
+.main{
   background-image: url("assets/img/hero.jpg");
   height: 95vh;
   background-size: max(1200px, 100vw);
@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.main .box {
+.main .box{
   height: 95vh;
   opacity: 0.55;
   width: 100%;
@@ -30,7 +30,7 @@ body {
   top: 0;
 }
 
-nav {
+nav{
   max-width: 75vw;
   display: flex;
   margin: auto;
@@ -40,20 +40,59 @@ nav {
 
 }
 
-nav img {
+nav img{
   color: red;
   width: max(12vw, 88px);
   position: relative;
   z-index: 10;
 }
-nav button {
+nav button{
   position: relative;
   z-index: 10;
-  background-color: red;
-  padding: 6px 12px;
+  /* background-color: red;
+  padding: 4px 12px;
   border-radius: 5px;
   font-size: 1rem;
-  color: #fff;
+  color: #fff; */
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid dimgray;
+  box-sizing: border-box;
+  cursor: default;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1;
+  padding: 2px 7px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  cursor: pointer;
+  fill: currentColor;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: background-color, border-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  vertical-align: text-top;
+  width: auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-height: 2rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 nav select {
   position: relative;
@@ -64,6 +103,7 @@ nav select {
   font-size: 1rem;
   color: #fff;
   border: 1px solid grey;
+  cursor: pointer;
 }
 nav option {
   color: #fff;
@@ -75,7 +115,7 @@ nav .options {
   gap: 1rem;
   align-items: center;
 }
-.hero {
+.hero{
   color: #fff;
   height: calc(100% - 90px);
   display: flex;
@@ -85,40 +125,45 @@ nav .options {
   position: relative;
   
 }
-.hero> :first-child{
+.hero>:first-child{
     font-weight:bolder;
     font-size: 3rem;
     text-align: center;
 }
 .hero> :nth-child(2){
-    font-weight:400;
+    font-weight:500;
     font-size: 1.5rem;
     text-align: center;
+    line-height: 2;
 }
-.hero> :nth-child(2){
+.hero> :nth-child(3){
     font-weight:400;
     font-size: 1.125rem;
-    line-height: 1.5;
+    
     text-align: center;
+    line-height: 3;
 }
 .hero> :nth-child(4) button {
     position: relative;
     z-index: 10;
+    padding-top: 5px;
     background-color: red;
-   height: 100%;
-    border-radius: 5px;
-    font-size: 1rem;
+    height: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
     color: #fff;
     width:15vw;
+    cursor: pointer;
+    font-weight: 700;
   }
 
   .hero> :nth-child(4) input {
     position: relative;
     z-index: 10;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-   
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+   padding-left: 10px;
+    border-radius: 3px;
     font-size: 1rem;
     color: #fff;
     border: 1px solid grey;
@@ -130,11 +175,13 @@ nav .options {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
   }
   .seperator{
-    width: 100vw;
+    width: 100%;
     height: 8px;
     background-color: grey;
+    opacity: 0.4;
   }
   .second{
     position: relative;
@@ -143,16 +190,33 @@ nav .options {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    width: 100vw;
+    max-width: 70vw;
+    margin: auto;
+    
+    overflow: hidden;
   }
   .secondText> :first-child{
     font-weight:bolder;
     font-size: 3rem;
-    text-align: center;
+    
 }
 .secondText> :nth-child(2){
     font-weight:400;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.5;
-    text-align: center;
+    
+}
+.secondText{
+  display: block;
+  width: 45vw;
+  text-align: left;
+  
+}
+.secondImage{
+  width: 30vw;
+  padding:10px;
+}
+.secondImage> img{
+  width: 33vw;
+  height: auto;
 }
