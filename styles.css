@@ -93,7 +93,7 @@ nav button {
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-nav select {
+.options select {
   position: relative;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.2);
@@ -287,10 +287,11 @@ nav .options {
   
 }
 .faq .faqBox{
+  transition: all 1s ease-out;
   width: 100%;
   padding: 1.5rem;
   margin: 0.75rem 0;
-  background-color: #262527;
+  background-color: #2d2d2d;
   font-size: 1.5rem;
   position: relative;
   cursor: pointer;
@@ -304,3 +305,25 @@ nav .options {
   padding-bottom: 62px;
 }
 
+.faq .faqBox:hover{
+  background-color: #414141;
+  cursor: pointer;
+}
+footer{
+  max-width: 70vw;
+  margin: auto;
+  padding: 60px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 21px;
+}
