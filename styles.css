@@ -150,7 +150,7 @@ nav .options {
   border-radius: 3px;
   font-size: 1.5rem;
   color: #fff;
-  width: 15vw;
+  width: 38%;
   cursor: pointer;
   font-weight: 700;
 }
@@ -165,7 +165,7 @@ nav .options {
   font-size: 1rem;
   color: #fff;
   border: 1px solid grey;
-  width: 22vw;
+  width: 55%;
 }
 .hero > :nth-child(4) {
   width: 40vw;
@@ -300,6 +300,8 @@ nav .options {
 .faq .faqBox svg{
   position: absolute;
   right: 10px;
+  width: 42px;
+  height: 42px;
 }
 .footerMail {
   padding-bottom: 62px;
@@ -326,4 +328,135 @@ footer{
   flex-direction: column;
   justify-content: center;
   gap: 21px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    max-width: 90vw;
+  }
+  .main {
+   
+    background-size: cover;
+  }
+  .main .box {
+
+    
+  }
+  .hero > :nth-child(4) {
+    width: 80vw;
+    height: 70px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .hero > :nth-child(4) button{
+    width: 70%;  }
+    .hero > :nth-child(4) input{
+      width: 100%;  }
+  .second{
+    flex-wrap: wrap;
+
+  }
+  .second :nth-child(1), .second :nth-child(2){
+    width: 100%;
+  }
+  .thirdStrip{
+  height: 20%;
+  width: 50%!important;
+  }
+  .thirdStrip> img{
+    width: 16% !important;
+  }
+  .s1, .s3{
+    margin-bottom: 50px;
+  }
+  .s2, .s3, .s5, .s6{
+    margin-top: 50px;
+  }
+  .forthImg video{
+    width: 65% !important;
+    left: 15vw;
+    top: 5vh;
+  }
+  
+}
+
+@media screen and (max-width: 1795px) {
+  .main{
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  video{
+    width: 65% !important;
+  }
+  .hero > :first-child {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .hero > :nth-child(2) {
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2;
+  }
+  .hero > :nth-child(3) {
+    font-weight: 400;
+    font-size: 0.6rem;
+  
+    text-align: center;
+    line-height: 3;
+  }
+  .secondText {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .secondText > :first-child {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .secondText :nth-child(2){
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+  .hideInMob{
+    display: none;
+  }
+  .faq h2{
+    font-size: 1.5rem;
+  }
+  .s1, .s3{
+    margin-bottom: 15px;
+  }
+  .s2, .s3, .s5, .s6{
+    margin-top: 15px;
+  }
+  .faq{
+    padding-top: 21px;
+    width: 98vw;
+  }
+  .faqList{
+    width: 90%;
+    flex-grow: 1;
+  }
+  .faq .faqBox{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    background-color: #2d2d2d;
+    font-size: 0.8rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .faq .faqBox svg{
+    right: 5px;
+    width: 22px;
+    height: 22px;
+  }
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
 }
